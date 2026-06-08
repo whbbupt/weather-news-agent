@@ -1,0 +1,12 @@
+[project]
+name = "weather-news-agent"
+version = "0.1.0"
+description = "A single-purpose AI agent for weather and news queries using Ollama function calling"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.28",
+    "feedparser>=6.0",
+]
+
+[project.scripts]
+weather-agent = "agent:main"
