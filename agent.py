@@ -4,14 +4,8 @@ A single-purpose AI agent that uses Ollama function calling
 to answer weather and news queries with live data.
 """
 
-import sys
 import asyncio
 from llm_client import chat
-
-# Fix Chinese input/output on Windows terminals
-if sys.platform == "win32":
-    sys.stdin.reconfigure(encoding="utf-8")
-    sys.stdout.reconfigure(encoding="utf-8")
 
 
 async def main():
