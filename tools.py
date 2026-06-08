@@ -60,6 +60,8 @@ async def get_weather(city: str) -> dict:
 _RSS_FEEDS = [
     ("https://www.ithome.com/rss/", "IT之家"),
     ("https://36kr.com/feed", "36氪"),
+    ("https://sspai.com/feed", "少数派"),
+    ("https://www.oschina.net/news/rss", "OSChina"),
 ]
 
 

@@ -22,13 +22,13 @@ TOOLS = [
         "type": "function",
         "function": {
             "name": "get_news",
-            "description": "搜索指定话题的最近新闻头条和摘要。Search recent news headlines and summaries for a topic.",
+            "description": "搜索指定话题的最近新闻头条和摘要，覆盖科技、数码、商业、开源等领域。数据来自IT之家、36氪、少数派、OSChina四个国内RSS源。Search recent news headlines by topic across technology, digital, business, and open-source domains.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "topic": {
                         "type": "string",
-                        "description": "新闻话题关键词，如 technology、sports、AI、business、science",
+                        "description": "新闻话题关键词，如 科技、AI、创业、数码、商业、开源、互联网、软件 等",
                     },
                     "count": {
                         "type": "integer",

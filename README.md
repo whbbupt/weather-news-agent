@@ -61,5 +61,7 @@ Uses **LLM Function Calling**: tool execution results are injected into the conv
 | Open-Meteo | `https://api.open-meteo.com` | Free, no key |
 | IT之家 RSS | `https://www.ithome.com/rss/` | Free, no key |
 | 36氪 RSS | `https://36kr.com/feed` | Free, no key |
+| 少数派 RSS | `https://sspai.com/feed` | Free, no key |
+| OSChina RSS | `https://www.oschina.net/news/rss` | Free, no key |
 
 All sources are accessible from within China without proxy.
