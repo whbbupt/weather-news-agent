@@ -2,6 +2,29 @@
 
 A single-purpose AI agent that answers weather and news queries using local LLM (Ollama) function calling. Built for course "软件产品综合开发实践 — 实验二 (BYOA)".
 
+## Prerequisites
+
+Before running this project, install the following software:
+
+1. **Python 3.10+**
+   - Verify installation:
+     ```bash
+     python --version
+     ```
+
+2. **Ollama**
+   - Download and install Ollama from: https://ollama.com/download
+   - After installation, verify:
+     ```bash
+     ollama --version
+     ```
+
+3. **qwen2.5:7b model**
+   - Download the local LLM model:
+     ```bash
+     ollama pull qwen2.5:7b
+     ```
+
 ## Quick Start
 
 ```bash
@@ -17,6 +40,39 @@ If Ollama is not running, open the Ollama desktop app or run:
 ```bash
 ollama serve
 ```
+
+## Troubleshooting
+
+### `ollama` command not found
+
+Ollama is not installed or not added to PATH. Install it from https://ollama.com/download, then restart the terminal.
+
+### Cannot connect to Ollama
+
+Start the Ollama desktop app, or run:
+
+```bash
+ollama serve
+```
+
+### Model not found
+
+Pull the required model:
+
+```bash
+ollama pull qwen2.5:7b
+```
+
+### Chinese input does not work in terminal
+
+This is usually a Windows terminal/input method issue, not an agent bug. Use English prompts such as:
+
+```text
+What's the weather in Beijing?
+Show me recent AI news
+```
+
+The agent supports both Chinese and English when the terminal input method works correctly.
 
 ## Usage
 
@@ -39,7 +95,7 @@ Type `quit` or `exit` to stop the agent.
 | `llm_client.py` | Ollama chat API wrapper with tool-calling orchestration |
 | `tools.py` | Tool implementations: `get_weather` (Open-Meteo), `get_news` (domestic RSS) |
 | `tool_schemas.py` | JSON Schema tool definitions for Ollama function calling |
-| `requirements.txt` | Python dependency list for quick installation |
+| `requirements.txt` | Python dependency list for quick installation (`pip install -r requirements.txt`) |
 
 ## Architecture
 
