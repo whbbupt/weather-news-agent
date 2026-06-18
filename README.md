@@ -97,6 +97,12 @@ Type `quit` or `exit` to stop the agent.
 | `tool_schemas.py` | JSON Schema tool definitions for Ollama function calling |
 | `requirements.txt` | Python dependency list for quick installation (`pip install -r requirements.txt`) |
 
+## Core Prompt
+
+The agent's core system prompt is located in `llm_client.py` as the `SYSTEM_PROMPT` variable. It defines the agent's role, available tools, tool-calling rules, response language, and scope limits.
+
+Tool schemas are defined in `tool_schemas.py`, including the JSON Schema descriptions for `get_weather` and `get_news`.
+
 ## Architecture
 
 ```
